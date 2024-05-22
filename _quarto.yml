@@ -3,7 +3,8 @@ project:
 
 website:
   title: "PUBLIC INNOVATION, DEVELOPMENT AND SUSTAINABILITY CONFERENCE"
-  navbar:    
+  navbar: 
+      pinned: True
       right:
       - text: "Home"
         href: index.qmd
@@ -15,6 +16,7 @@ website:
         href: speakers.qmd
       - text: "Contact"
         href: contact.qmd
+
 
 format:
   html:
