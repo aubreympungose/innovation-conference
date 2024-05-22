@@ -71,3 +71,11 @@ page-layout: custom
   </ul>
 
 </div>
+
+ <div style="text-align: center; margin-bottom: 20px;">
+  <p style="color: #CD5C5C; font-weight: bold; font-size: 24px; word-wrap: break-word">
+  TO LEARN MORE ABOUT THE CONFERENCE THEMES,
+  <a href="https://drive.google.com/file/d/1GBcRk2fTfUgLGrfnYhP_bkKKBBrrtxXY/view?usp=sharing" target="_blank">PLEASE CLICK HERE</a>
+  </p> 
+</div>
+

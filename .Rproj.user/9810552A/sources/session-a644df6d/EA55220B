@@ -3,7 +3,7 @@
     "path": "~/OneDrive - University of KwaZulu-Natal/Research Projects/VVISD Project/conference_website/about.qmd",
     "project_path": "about.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3962406675",
     "contents": "",
     "dirty": false,
     "created": 1716392014111.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "47,34",
-        "scrollLine": "0",
+        "cursorPosition": "75,26",
+        "scrollLine": "52",
         "rmdVisualMode": "false",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "39:0",
@@ -21,11 +21,11 @@
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716292523,
+    "lastKnownWriteTime": 1716403987,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716292523,
+    "last_content_update": 1716403987100,
     "read_only": false,
     "read_only_alternatives": []
 }
