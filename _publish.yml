@@ -1,4 +1,4 @@
 - source: project
   netlify:
     - id: 06b48cad-ac4b-43c5-bbe3-53c5236cf867
-      url: 'https://innovation-conference.netlify.app/'
+      url: 'https://innovation-conference.netlify.app'

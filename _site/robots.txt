@@ -1,1 +1,1 @@
-Sitemap: https://jovial-otter-d465b6.netlify.app/sitemap.xml
+Sitemap: https://innovation-conference.netlify.app/sitemap.xml

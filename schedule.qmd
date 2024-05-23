@@ -1,0 +1,13 @@
+---
+title: ""
+page-layout: custom
+---
+
+
+<div class="index-page">
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word;">
+  </p>
+  
+![](images/coming_soon.png){width="50%"}
