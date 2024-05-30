@@ -23,7 +23,7 @@ page-layout: custom
  <div style="text-align: center; margin-bottom: 20px;">
   <p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word">
    DATE:<br>
-   25-25 OCTOBER 2024<br>
+   24-25 OCTOBER 2024<br>
    VENUE: KWAZULU-NATAL, DURBAN, SOUTH AFRICA
   </p> 
   

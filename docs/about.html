@@ -92,11 +92,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
@@ -124,11 +124,72 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="index-page">
-
 <div style="text-align: center; margin-bottom: 20px;">
-<p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word;">
+<p style="color: yellow; font-weight: bold; font-size: 24px; word-wrap: break-word;">
+JUSTIFICATION FOR THE CONFERENCE ON PUBLIC INNOVATION, DEVELOPMENT AND SUSTAINABILITY
 </p>
-<p><img src="images/coming_soon.png" class="img-fluid" style="width:50.0%"></p>
+<div style="text-align: left;  margin: 35px 70px 50px 90px;">
+<p style="color: white; font-weight: bold; font-size: 18px; word-wrap: break-word">
+The world has, over the last two decades, been hit by a series of crises, ranging from financial to political crises. The Great Recession of 2008 has had huge and long-lasting impacts on the economies of both the developed and developing countries. Political crises ensued, as a result of these crises, as evidenced by the recent political polarisation, and democracy regression around the globe. The recent pandemic has unmasked the extent of the inequality, poverty, and social exclusion among populations around the world. These crises also happen within the existing ‘‘grand’’ climate and sustainability challenges. It is against this background that the theme of the Conference on Public Innovation, Development and Sustainability is centred on innovation and how it can respond to the recent crises. Concepts such as “innovation for development”, “information and communication technology (ICT) for development”, “digital economies”, and “artificial intelligence” (AI) are being increasingly used in academic and policy discourses. The idea of innovation for development (I4D) has now been entrenched within countries and international development organisations.
+</p>
+<p style="color: white; font-weight: bold; font-size: 18px; word-wrap: break-word">
+In trying to tackle the grand societal challenges through innovation, some scholars and policymakers have recently called for mission-oriented innovation. Previously, innovation debates were centred on Research and Development (R&amp;D), mainly to enhance the productivity of firms (Hekkert et al., 2020). The aim of the state in driving the innovation agenda, was to strengthen national systems of innovation for national economic growth (Schot and Steinmueller, 2018). However, missions-oriented innovation centres the notion of public value in its design and aim to create a pathway to different ways of working across the public sector and creating better public value for citizens (OECD, 2022). Conceptualising innovation and development through a ‘‘missions’’ lens has several advantages and offers a range of opportunities. First, the proposed policy solutions (for example, SDGs) to grand challenges require cross-sectoral and multiple-actors collaboration. Second, mission-oriented innovation calls for the transformation of the state and the public sector, and the re-orientation of the state to shape innovation for public value. It is against this background that we invite high quality submissions on public innovation, development, and sustainability for presentation at a two-day conference on Public Innovation, Development and Sustainability. We encourage researchers, academics, public officials, private sector, and civil society to send through submissions. Submissions can address the following topics and more:
+</p>
+<!-- Two-column list -->
+<ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; color: white; font-weight: bold; font-size: 18px;">
+<li style="flex: 1; width: 50%;">
+<!-- List items for column 1 -->
+<ul style="padding-left: 20px;">
+<li>
+Innovation and inclusive development
+</li>
+<li>
+e-Participation, digital participation
+</li>
+<li>
+e-democracy
+</li>
+<li>
+Innovation and sustainable technologies
+</li>
+<li>
+Enablers and barriers to public innovation
+</li>
+<li>
+Innovation in local government
+</li>
+</ul>
+</li>
+<li style="flex: 1; width: 50%;">
+<!-- List items for column 2 -->
+<ul style="padding-left: 20px;">
+<li>
+Innovation in higher education
+</li>
+<li>
+Public-private sector partnership in advancing innovation
+</li>
+<li>
+Digital transformation and public innovation
+</li>
+<li>
+Critical conceptualisation of innovation for development
+</li>
+<li>
+Grassroots innovation
+</li>
+<li>
+Innovation and alternative energy systems
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="text-align: center; margin-bottom: 20px;">
+<p style="color: #CD5C5C; font-weight: bold; font-size: 24px; word-wrap: break-word">
+TO LEARN MORE ABOUT THE CONFERENCE THEMES, <a href="https://drive.google.com/file/d/1GBcRk2fTfUgLGrfnYhP_bkKKBBrrtxXY/view?usp=sharing" target="_blank">PLEASE CLICK HERE</a>
+</p>
+</div>
 
 
 
@@ -214,7 +275,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/innovation-conference\.netlify\.app");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

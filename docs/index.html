@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
@@ -125,10 +125,26 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="index-page">
 
+
+
 <div style="text-align: center; margin-bottom: 20px;">
 <p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word;">
+THE UNIVERSITY OF KWAZULU-NATAL IN PARTNERSHIP WITH<br> THE DEPARTMENT OF SCIENCE AND INNOVATION HAS A PLEASURE IN INVITING YOU TO<br> A CONFERENCE ON PUBLIC INNOVATION, DEVELOPMENT AND SUSTAINABILITY CONFERENCE
 </p>
-<p><img src="images/coming_soon.png" class="img-fluid" style="width:50.0%"></p>
+<p><img src="images/logo.png" class="img-fluid"></p>
+<div style="text-align: center; margin-bottom: 20px;">
+<p style="color: yellow; font-weight: bold; font-size: 24px; word-wrap: break-word">
+THEME<br>RETHINKING INNOVATION AND DEVELOPMENT IN THE (POST)-CRISIS WORLD
+</p>
+<div style="text-align: center; margin-bottom: 20px;">
+<p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word">
+DATE:<br> 24-25 OCTOBER 2024<br> VENUE: KWAZULU-NATAL, DURBAN, SOUTH AFRICA
+</p>
+<div style="text-align: center; margin-bottom: 20px;">
+<p style="color: #CD5C5C; font-weight: bold; font-size: 24px; word-wrap: break-word">
+ABSTRACT SUBMISSION DEADLINE:<br>05 JUNE 2024<br> <a href="https://redcap.ahri.org/surveys/?s=FXWRMJ4PLLCFTTR7">PLEASE CLICK HERE TO SUBMIT AN ABSTRACT</a>
+</p>
+</div>
 
 
 
@@ -214,7 +230,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/innovation-conference\.netlify\.app");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -547,4 +563,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</div></div></body></html>
+</div></div></div></div></body></html>

@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Speakers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link active" href="./contact.html" aria-current="page"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -115,24 +115,125 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content" id="quarto-document-content">
 
 
 
 
-<div class="index-page">
-
+<style>
+  body {
+    background-image: url('images/background.png');
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; /* Center the image */
+  }
+  p {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    word-wrap: break-word;
+  }
+  table {
+    width: 100%;
+        border-collapse: collapse;
+  }
+  th, td {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: rgba(0, 0, 0, 0);
+  }
+</style>
 <div style="text-align: center; margin-bottom: 20px;">
-<p style="color: white; font-weight: bold; font-size: 24px; word-wrap: break-word;">
+<p>
+LOCATION OF THE UNIVERSITY OF KWAZULU NATAL
 </p>
-<p><img src="images/coming_soon.png" class="img-fluid" style="width:50.0%"></p>
+</div>
+
+<title>
+Leaflet Map Example
+</title>
+<!-- Include Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"> <!-- Include Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<style>
+        /* Set the dimensions of the map container */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
+
+<!-- Create a div element to hold the map -->
+<div id="map">
+
+</div>
+<script>
+    // Initialize the map
+    var map = L.map('map').setView([-29.866205427354664, 30.981514108177937], 13);
+
+    // Add the base OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker with a popup
+    L.marker([-29.866205427354664, 30.981514108177937]).addTo(map)
+        .bindPopup('<b>University of KwaZulu Natal</b>').openPopup();
+</script>
+<table>
+<tbody><tr>
+<td colspan="2" style="color: yellow; text-align: centre; font-weight: bold;">
+For more details, please contact:
+</td>
+</tr>
+<tr>
+<th>
+Prof.&nbsp;Sithembiso L Myeni
+</th>
+<th>
+Ms Sinethemba Zungu
+</th>
+</tr>
+<tr>
+<td>
+Physical address: Office 821, Shepstone Building, Howard College Campus
+</td>
+<td>
+Physical address: Office 818, Shepstone Building, Howard College Campus
+</td>
+</tr>
+<tr>
+<td>
+Telephone Number: 031 260 1270
+</td>
+<td>
+Telephone Number: 031 260 1311
+</td>
+</tr>
+<tr>
+<td>
+E-mail address: Myenis1@ukzn.ac.za
+</td>
+<td>
+E-mail address: ZunguS8@ukzn.ac.za
+</td>
+</tr>
+</tbody></table>
 
 
 
 
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -214,7 +315,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/innovation-conference\.netlify\.app");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -547,4 +648,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</div></div></body></html>
+</body></html>
